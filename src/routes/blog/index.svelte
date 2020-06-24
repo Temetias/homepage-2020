@@ -10,7 +10,6 @@
 
 <script>
   import posts from "./_posts.js";
-  console.log(posts);
 </script>
 
 <style>
