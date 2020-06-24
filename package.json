@@ -1,0 +1,35 @@
+{
+  "name": "TODO",
+  "description": "TODO",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "sapper dev",
+    "build": "sapper build",
+    "export": "sapper export",
+    "start": "node __sapper__/build",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "test": "run-p --race dev cy:run"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "compression": "^1.7.1",
+    "gray-matter": "^4.0.2",
+    "marked": "^1.1.0",
+    "polka": "next",
+    "sirv": "^0.4.0"
+  },
+  "devDependencies": {
+    "fa-svelte": "^3.1.0",
+    "html-loader": "^1.1.0",
+    "import-glob-loader": "^1.1.0",
+    "markdown-loader": "^5.1.0",
+    "npm-run-all": "^4.1.5",
+    "raw-loader": "^4.0.1",
+    "sapper": "^0.27.0",
+    "svelte": "^3.0.0",
+    "svelte-loader": "^2.9.0",
+    "webpack": "^4.7.0"
+  }
+}
