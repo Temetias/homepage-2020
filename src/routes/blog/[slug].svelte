@@ -15,16 +15,29 @@
   import BlogPostHeader from "../../components/BlogPostHeader.svelte";
 
   export let post;
+
+  function idFy(str) {
+    return str
+      .toLowerCase()
+      .split(" ")
+      .join("-");
+  }
 </script>
 
 <style>
-
+  h1 {
+    margin-bottom: 1em;
+  }
+  .content {
+    margin: 2em 0;
+  }
 </style>
 
 <svelte:head>
   <title>{post.title}</title>
 </svelte:head>
 
+<h1 id={idFy(post.title)}>{post.title}</h1>
 <BlogPostHeader {post} />
 <div class="content">
   {@html post.content}

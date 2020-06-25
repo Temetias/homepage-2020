@@ -11,7 +11,7 @@ During my summer holidays I finally decided to improve my personal website. I ha
 
 The old site lacked quite a lot not only in the responsiviness department, but also in accessibility. There's barely any semantic on it and the load times overall are not really great for a page with no images, no real need for javascript and so on.
 
-*My old website*
+*My old website... Yes that line between the div and svg was actually visible.*😅
 ![alt text](/old-website.PNG "My old Nuxt.js website")
 
 ## Tech Choices 🔨
@@ -37,7 +37,7 @@ I decided to go for a minimal look in the hopes of rapid development and small b
 
 To achieve the nice effect of having a light source on the top left you need to cast a shadow on the bottom right and make a white shadow on the opposite side. To make the white appear at all I needed the background to be a bit darker. Also, I quickly realized that having just a solid red border completely wrecks the whole illusion.
 
-*Not good* 🤮
+*Not good, the red border is way too strong* 🤮
 ![alt-text](/figure-bad.PNG "Red border ruins the illusion")
 
 To achieve the wanted effect, the border needed a gradient. Well, that isn't really a thing so I ended up doing a ball shape behind the image and placing the image on top of it. The tricky part was to make them properly responsive. Luckily, responsive square and circle shapes are easy enough to achieve with the ol' `padding-bottom: 100%;` trick. Some absolute positioning on the image, and voilà!
@@ -45,7 +45,7 @@ To achieve the wanted effect, the border needed a gradient. Well, that isn't rea
 *The circle shape for the gradient*
 ![alt-text](/figure-bg.PNG "The circle shape for the gradient")
 
-*Final result* 🎉
+*Final result, looking good!* 🎉
 ![alt-text](/figure.PNG "Final result")
 
 Having wrestled with that problem for longer than I want to admit, I decided that this was it for the gimmicks. Rest of the design is kind of self-explanatory: Black on white, some red highlights and that's it.

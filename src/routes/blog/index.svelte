@@ -1,27 +1,34 @@
-<script context="module">
-  export function preload({ params, query }) {
-    return this.fetch(`blog.json`)
-      .then(r => r.json())
-      .then(posts => {
-        return { posts };
-      });
-  }
-</script>
-
 <script>
+  import Clipper from "../../components/Clipper.svelte";
   import posts from "./_posts.js";
+  import BlogPostHeader from "../../components/BlogPostHeader.svelte";
 </script>
 
 <style>
   ul {
-    margin: 0 0 1em 0;
+    margin: 2em 0 1em 0;
     line-height: 1.5;
+    padding: 0;
   }
   li {
     display: block;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0.2em;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.05);
+    padding: 0.5em 2.5em;
   }
-  span {
-    display: block;
+  @media (max-width: 480px) {
+    li {
+      padding: 0.3em 1.5em;
+    }
+    li footer {
+      padding: 0 1em;
+    }
+  }
+  li footer {
+    margin: 0em -1.5em 0.5em -1.5em;
+    display: flex;
+    justify-content: flex-end;
   }
 </style>
 
@@ -29,7 +36,13 @@
   <title>Blog</title>
 </svelte:head>
 
-<h1>Recent posts</h1>
+<header>
+  <h1>The Blog</h1>
+  <span>
+    Nuggets of knowledge, ramblings of a dev and maybe someday some content from
+    friends too!
+  </span>
+</header>
 
 <ul>
   {#each posts as post}
@@ -41,8 +54,10 @@
       <h2>
         <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
       </h2>
-      <span>{new Date(post.date).toLocaleDateString()}</span>
-      <span>{post.readTime} minute read</span>
+      <BlogPostHeader {post} />
+      <footer>
+        <Clipper link="/blog/{post.slug}" />
+      </footer>
     </li>
   {/each}
 </ul>
