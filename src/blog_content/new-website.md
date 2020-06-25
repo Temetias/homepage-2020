@@ -2,9 +2,10 @@
 title: The New Website
 slug: new-website
 date: 2020-06-24
+author: Teemu Karppinen
+authorImg: /me2.jpg
+authorLink: https://teemukarppinen.dev
 ---
-
-# The New Website 🌍
 
 During my summer holidays I finally decided to improve my personal website. I had a site already but it was made back when I was just starting in webdev and, well, it shows.
 
