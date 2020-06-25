@@ -6,7 +6,7 @@ mkdir tmp2
 mv tmp/.git/ tmp2/
 mv tmp/CNAME tmp2/
 mv __sapper__/export/* tmp2/
-cd tmp2/
+cd tmp2/ || exit 1
 git add .
 git commit -m "autodeploy"
 git push && cd .. && rm -rf tmp/ tmp2/
