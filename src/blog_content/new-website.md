@@ -72,4 +72,10 @@ In the end I decided to ditch the wildcard import and webpack level .md parsing,
 
 In the hopes of actually finishing the site during my holiday, I left the blog post part as is for now. But I'm most certainly coming back to the subject. Expect a new blog post soon!
 
+## Deploying 🚀
 
+Github pages was a obvious choice here. There are some tempting alternatives, but I already had my github pages setup and my custom domain was already setup nicely with it. Github pages is also available with a great price of free!
+
+I'm planning to do some sort of fancier integration, maybe utilizing [Github actions](https://github.com/features/actions) but before I sorted how I want to proceed with the blog I didn't want to commit to a solution. It would suck to implement a fancy deployment pipeline, maybe even costing some money just to end up scrapping it.
+
+I did, however, make a [super ghetto deployment script](https://github.com/Temetias/homepage-2020/blob/master/deploy.sh) which I hooked up with npm so I can just use `npm run deploy` to push all my changes live. It's not the fanciest thing ever, but hey, it works. With this setup I might actually be able to keep myself updating the website every now and then!
