@@ -4,6 +4,7 @@
   }
   .text-block :global(*) {
     display: inline;
+    margin: 0;
   }
 </style>
 
