@@ -10,17 +10,12 @@
     position: relative;
     max-width: 56em;
     padding: 2em;
-    margin: 8em auto 0 auto;
+    margin: 8vh auto 0 auto;
     box-sizing: border-box;
   }
   @media (max-width: 769px) {
     main {
-      margin: 4em auto 0 auto;
-    }
-  }
-  @media (max-width: 480px) {
-    main {
-      margin: 0 auto;
+      margin: 4vh auto 0 auto;
     }
   }
 </style>

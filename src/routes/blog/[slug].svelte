@@ -31,6 +31,14 @@
   .content {
     margin: 2em 0;
   }
+  .blog-disclaimer {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 2em 0;
+    margin-top: 5em;
+    font-weight: 600;
+  }
 </style>
 
 <svelte:head>
@@ -41,4 +49,13 @@
 <BlogPostHeader {post} />
 <div class="content">
   {@html post.content}
+</div>
+<div class="blog-disclaimer">
+  <span>
+    Hey! If you're looking for a comment section I'm sorry to disappoint you: I
+    haven't had time to make one yet. 🤐 But if you wanna call me out on my
+    bull💩, just ping me
+    <a href="https://twitter.com/Temetias">@Twitter</a>
+    meanwhile!
+  </span>
 </div>

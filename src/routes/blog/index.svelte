@@ -12,10 +12,11 @@
   }
   li {
     display: block;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 0.2em;
-    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     padding: 0.5em 2.5em;
+  }
+  li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
   }
   @media (max-width: 480px) {
     li {

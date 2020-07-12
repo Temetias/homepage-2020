@@ -32,7 +32,7 @@
     display: block;
   }
   a {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   nav a {
     text-decoration: none;
@@ -69,7 +69,7 @@
   }
   @media (max-width: 480px) {
     a {
-      font-size: 1em;
+      font-size: 1.2em;
     }
   }
 </style>

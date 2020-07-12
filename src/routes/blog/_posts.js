@@ -3,6 +3,7 @@ import marked from "marked";
 
 // Import new stuff here!
 import newWebsite from "../../blog_content/new-website.md";
+//import managingOop from "../../blog_content/managing-event-handlers-in-classes.md";
 
 const AVERAGE_WPM = 256;
 
@@ -22,6 +23,7 @@ function buildPost(post) {
 // Drop new stuff here!
 const posts = [
   newWebsite,
+  //managingOop,
 ].map(buildPost);
 
 export default posts;
