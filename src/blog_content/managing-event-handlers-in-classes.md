@@ -7,7 +7,7 @@ authorImg: /me2.jpg
 authorLink: https://teemukarppinen.dev
 ---
 
-If you've worked with TypeScript you might've noticed that many of library authors have a weird obsession of writing libraries as classes. Or even worse, write class wrappers around already nice, clean, functional API's just for the sake of that "being the TypeScript" way of doing things. Don't get me wrong: I'm not saying the libraries are necessarily bad or shouldn't be used. There is just some painpoints that pop up with the OOP approach. Especially when we're talking about an event-driven language like JavaScript.
+If you've worked with TypeScript you might've noticed that many of library authors have a weird obsession of writing libraries as classes. Or even worse, write class wrappers around already nice, clean, functional API's just for the sake of that "being the TypeScript way of doing things". Don't get me wrong: I'm not saying the libraries are necessarily bad or shouldn't be used. There is just some painpoints that pop up with the OOP approach. Especially when we're talking about an event-driven language like JavaScript.
 
 ## The Problem 😬
 
@@ -29,7 +29,7 @@ You wish! You see, this approach will make the ```mouseDownHandler``` lose ```th
 
 ## The Ugly Solution 🤮
 
-Okay then, let's bind the function. But then that needs to happen inside the lifecycle. And don't forget, we want to refer that bound function later to detach it! So we can't just go ```map.mouseDown.on(this.mouseDownHandler.bind(this))```, [Function.bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) creates a new function and that's the function we want to be .offing later.
+Okay then, let's bind the function. But then that needs to happen inside the lifecycle. And don't forget, we want to refer that bound function later to detach it! So we can't just go ```map.mouseDown.on(this.mouseDownHandler.bind(this))``` because [Function.bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) creates a new function and that's the function we want to be .offing later.
 
 So what we need to do is to have a separate variable for the function and alter that one. Something like this:
 
@@ -60,5 +60,5 @@ Utility functions... Can't have enough of those, right? 😅
 
 ## To Close Things Up 
 
-What I showed here is not necessarily the golden solution you were looking for. But what it is, in my opinion, a decent workaround to an annoying problem. Overall, all this would've been avoided by not using class based API in the first place and avoiding the use of ```this``` altogether. But we don't always have the benefit of choosing the libraries we work with. It's situations like these, when workarounds like this are valuable.
+What I showed here is not necessarily the golden solution you were looking for. But it is, in my opinion, a decent workaround to an annoying problem. Overall, all this would've been avoided by not using class based API in the first place and avoiding the use of ```this``` altogether. But we don't always have the benefit of choosing the libraries we work with. It's situations like these, when workarounds like this are valuable.
 
