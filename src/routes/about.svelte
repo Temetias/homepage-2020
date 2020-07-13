@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Teemu Karppinen /About</title>
+  <title>Teemu Karppinen - About</title>
 </svelte:head>
 
 <h1>About this site</h1>

@@ -34,7 +34,7 @@
 </style>
 
 <svelte:head>
-  <title>Blog</title>
+  <title>Teemu Karppinen - Blog</title>
 </svelte:head>
 
 <header>
