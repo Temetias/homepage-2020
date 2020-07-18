@@ -16,7 +16,7 @@
     width: 100vw;
     max-width: 1200px;
   }
-  nav {
+  .primary-nav {
     font-weight: 500;
     display: flex;
     align-items: stretch;
@@ -34,19 +34,19 @@
   a {
     font-size: 1.4em;
   }
-  nav a {
+  .primary-nav a {
     text-decoration: none;
     text-transform: capitalize;
   }
-  nav a::before {
+  .primary-nav a::before {
     content: "<";
     margin-right: 1px;
   }
-  nav a::after {
+  .primary-nav a::after {
     content: "/>";
     margin-left: 1px;
   }
-  nav a[aria-current] {
+  .primary-nav a[aria-current] {
     color: red;
   }
   .socials {
@@ -56,7 +56,7 @@
     font-size: 1.6em;
   }
   @media (max-width: 660px) {
-    .socials {
+    .socials-nav {
       display: none;
     }
     .nav-wrap {
@@ -75,7 +75,7 @@
 </style>
 
 <div class="nav-wrap">
-  <nav>
+  <nav aria-label="primary" class="primary-nav">
     <ul>
       <li>
         <a aria-current={segment === undefined ? 'page' : undefined} href=".">
@@ -89,23 +89,25 @@
       </li>
     </ul>
   </nav>
-  <ul class="socials">
-    <li>
-      <a href="https://github.com/Temetias" aria-label="My github">
-        <Icon icon={faGithub} />
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/Temetias" aria-label="My twitter">
-        <Icon icon={faTwitter} />
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.linkedin.com/in/teemu-karppinen-1174b1139/"
-        aria-label="My linkedin">
-        <Icon icon={faLinkedin} />
-      </a>
-    </li>
-  </ul>
+  <nav aria-label="social-links" class="socials-nav">
+    <ul class="socials">
+      <li>
+        <a href="https://github.com/Temetias" aria-label="My github">
+          <Icon icon={faGithub} />
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/Temetias" aria-label="My twitter">
+          <Icon icon={faTwitter} />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/teemu-karppinen-1174b1139/"
+          aria-label="My linkedin">
+          <Icon icon={faLinkedin} />
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
