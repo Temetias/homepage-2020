@@ -7,7 +7,7 @@ authorImg: /me2.jpg
 authorLink: https://teemukarppinen.dev
 ---
 
-If you've worked with TypeScript you might've noticed that many of library authors have a weird obsession of writing libraries as classes. Or even worse, write class wrappers around already nice, clean, functional API's just for the sake of that "being the TypeScript way of doing things". Don't get me wrong: I'm not saying the libraries are necessarily bad or shouldn't be used. There is just some painpoints that pop up with the OOP approach. Especially when we're talking about an event-driven language like JavaScript.
+If you've worked with TypeScript, you might've noticed that many of library authors have a weird obsession of writing libraries as classes. Or even worse, write class wrappers around already nice, clean, functional API's just for the sake of that "being the TypeScript way of doing things". Don't get me wrong: I'm not saying the libraries are necessarily bad or shouldn't be used. There are just some pain points that pop up with the OOP approach. Especially when we're talking about an event-driven language like JavaScript.
 
 ## The Problem 😬
 
