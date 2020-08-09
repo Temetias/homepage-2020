@@ -2,6 +2,7 @@ import grayMatter from "gray-matter";
 import marked from "marked";
 
 // Import new stuff here!
+import iterativeVue from "../../blog_content/iterative-adoption-of-a-framework.md";
 import managingOop from "../../blog_content/managing-event-handlers-in-classes.md";
 import newWebsite from "../../blog_content/new-website.md";
 
@@ -22,6 +23,7 @@ function buildPost(post) {
 
 // Drop new stuff here!
 const posts = [
+  iterativeVue,
   managingOop,
   newWebsite,
 ].map(buildPost);
