@@ -1,5 +1,5 @@
 ---
-title: Managing Event Handlers In Classes
+title: Managing Event Handlers in Classes
 slug: managing-event-handlers-in-classes
 date: 2020-07-12
 author: Teemu Karppinen
