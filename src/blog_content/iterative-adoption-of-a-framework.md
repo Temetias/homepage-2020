@@ -1,5 +1,5 @@
 ---
-title: Iterative Adoption Of A Frontend Framework
+title: Iterative Adoption of a Frontend Framework
 slug: iterative-adoption-of-a-frontend-framework
 date: 2020-08-09
 author: Teemu Karppinen
