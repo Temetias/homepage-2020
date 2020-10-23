@@ -31,7 +31,7 @@ Destructuring is one of my favourite features in Javascript. It allows you to re
 
 ## GOTCHA - Spread ordering 🤮
 
-Now that we are talking about spreading objects, be careful with the ordering. If you add a key to an object, the spread does in fact override the key! I have to admit, this bit me a couple of times before I started to get into habit of *always spread last*.
+Now that we are talking about spreading objects, be careful with the ordering. If you add a key to an object, the spread does in fact override the key! I have to admit, this bit me a couple of times before I started to get into habit of *always spread first*.
 
 ![alt text](/sad-toyota.PNG "Spread can bite you, be careful with the ordering!")
 
@@ -46,6 +46,8 @@ What happens here? "isIn" is a function which returns a function which returns a
 
 To more effectively utilize this in TypeScript, I've learned that splitting your types based on the provided functionality achieves a very nice typesystem that supports currying. The types for the example above might look something like this:
 ![alt text](/curry-ts.PNG "Simplest example of currying in TS")
+
+To make the most out of this trick, make sure you order your arguments in a way that you put in the stuff you'll know early first and the stuff you know later last. Think about what is the needle and what is the haystack.
 
 More stuff about currying and functional JS/TS in general can be found in [Kyle Simpsons "Functional Light JavaScript"](https://github.com/getify/Functional-Light-JS). Strong recommendation for the [video course in Frontend Masters](https://frontendmasters.com/courses/functional-javascript-v3/). Hands down one of the best online courses I've ever watched.
 
