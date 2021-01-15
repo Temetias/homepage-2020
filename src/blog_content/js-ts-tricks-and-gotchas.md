@@ -25,7 +25,7 @@ I've ranted about this [before](/managing-event-handlers-in-classes): When assig
 
 ## TRICK - Spreading and destructuring everything 🤩
 
-Destructuring is one of my favourite features in Javascript. It allows you to reduce your LoC by lot sometimes and overall results in compact and clean code. A common misconception is that it only works with objects but it also works for arrays too! I've bundled some examples underneath.
+Destructuring is one of my favourite features in Javascript. It allows you to reduce your LoC by a lot sometimes and overall results in compact and clean code. A common misconception is that it only works with objects but it also works for arrays too! I've bundled some examples underneath.
 
 ![alt text](/spread.PNG "Some examples of the power of spread and destructuring. Be careful not to overdo it!")
 
