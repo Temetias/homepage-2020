@@ -11,7 +11,7 @@ Ok, so this is going to be a quicker and lighter one. I bundled a random mess of
 
 ## TRICK - Assigning class properties in constructors 🤩
 
-A nice one for you OOP fans out there. You know the annoying part of assigning the stuff from constructor to the this context? You know, all this nonsense:
+A nice one for you OOP fans out there. You know the annoying part of assigning the stuff from constructor to this context? You know, all this nonsense:
 ![alt text](/class-bad.PNG "So much boilerplate!")
 
 Well, there's actually no need for all that. You can do this instead:
@@ -25,19 +25,19 @@ I've ranted about this [before](/managing-event-handlers-in-classes): When assig
 
 ## TRICK - Spreading and destructuring everything 🤩
 
-Destructuring is one of my favourite features in Javascript. It allows you to reduce your LoC by a lot sometimes and overall results in compact and clean code. A common misconception is that it only works with objects but it also works for arrays too! I've bundled some examples underneath.
+Destructuring is one of my favourite features in Javascript. It allows you to reduce your LoC by lot sometimes and overall results in compact and clean code. A common misconception is that it only works with objects but it also works for arrays too! I've bundled some examples underneath.
 
 ![alt text](/spread.PNG "Some examples of the power of spread and destructuring. Be careful not to overdo it!")
 
 ## GOTCHA - Spread ordering 🤮
 
-Now that we are talking about spreading objects, be careful with the ordering. If you add a key to an object, the spread does in fact override the key! I have to admit, this bit me a couple of times before I started to get into habit of *always spread first*.
+Now that we are talking about spreading objects, be careful with the ordering. If you add a key to an object, the spread does in fact override the key! I have to admit, this bit me a couple of times before I started to get into the habit of *always spread first*.
 
 ![alt text](/sad-toyota.PNG "Spread can bite you, be careful with the ordering!")
 
 ## TRICK - Currying / Partial application 🤩
 
-This is not only a JavaScript/TypeScript trick but more of a general functional programming concept. Sometimes you might want to make your function take its arguments one by one and return a new function between, instead of passing all of them at once. What this achieves is a specialization of the same functionality. The motivation behind this is to avoid duplicating code and reaching more readable end result.
+This is not only a JavaScript/TypeScript trick but more of a general functional programming concept. Sometimes you might want to make your function take its arguments one by one and return a new function between, instead of passing all of them at once. What this achieves is a specialization of the same functionality. The motivation behind this is to avoid duplicating code and reaching a more readable end result.
 
 Let's see an example:
 ![alt text](/curry.PNG "Simplest example of currying")
@@ -75,4 +75,4 @@ Beware of the icon next to the object.
 
 ## Outro
 
-That's it. A couple of useful and not so useful nuggets of knowledge. Hopefully this helps you dodge a bug or clean up a expression or two. Happy hacking! 😊
+That's it. A couple of useful and not so useful nuggets of knowledge. Hopefully this helps you dodge a bug or clean up an expression or two. Happy hacking! 😊
