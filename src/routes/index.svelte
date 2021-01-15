@@ -1,8 +1,11 @@
 <script>
   import TextBlock from "../components/TextBlock.svelte";
 
-  function years(from) {
-    return new Date().getFullYear() - new Date(from).getFullYear();
+  function years(from, isAge = false) {
+    const computedDiff = new Date(new Date().getTime() - new Date(from).getTime());
+    return isAge
+      ? computedDiff.getFullYear() - 1970
+      : computedDiff.getFullYear() - (computedDiff.getMonth() < 5 ? 1970 : 1969);
   }
 </script>
 
@@ -96,7 +99,7 @@
       I am
     </h2>
     <p>
-      a web developer from Joensuu, Finland. I am {years('April 5, 1994 00:00:00')}
+      a web developer from Joensuu, Finland. I am {years('April 5, 1994 00:00:00', true)}
       years old and I have been doing different kinds of development for {years('August 1, 2015 00:00:00')}
       years. During those {years('August 1, 2015 00:00:00')} years I have
       studied in the university, worked professionally for {years('November 1, 2017 00:00:00')}
