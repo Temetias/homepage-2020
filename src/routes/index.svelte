@@ -99,7 +99,7 @@
       I am
     </h2>
     <p>
-      a web developer from Joensuu, Finland. I am {years('April 5, 1994 00:00:00', true)}
+      a fullstack developer from Joensuu, Finland. I am {years('April 5, 1994 00:00:00', true)}
       years old and I have been doing different kinds of development for {years('August 1, 2015 00:00:00')}
       years. During those {years('August 1, 2015 00:00:00')} years I have
       studied in the university, worked professionally for {years('November 1, 2017 00:00:00')}
@@ -115,14 +115,12 @@
       My skillset
     </h2>
     <p>
-      is mainly focused on web development, so basically the web trio
-      (JS/HTML/CSS), TypeScript and the related tools and frameworks. I do not
-      want to define myself as a single framework developer and instead have
-      heavily invested into the fundamentals of the web platform. I do, however,
-      have most professional frontend experience in the Vue.js ecosystem. On the
-      backend I have mostly worked with Drupal, Node.js, Linux servers and some
-      Azure. I am currently also dabbling into Serverless and the AWS ecosystem
-      on my spare time.
+      is mainly focused on web development. On the frontend I have tried and used tons of different
+      tools and technologies and generally can work with all of them. I have most professional experience on the Vue.js
+      ecosystem but when given the choice I tend to lean towards React. I prefer to work with static typing and
+      use TypeScript pretty much everywhere. On the backend I have mostly worked with Node.js, Drupal, SQL, Linux VM's and
+      some Azure. I've also gathered a lot of experience in working directly with clients through the process of building
+      and maintaining software.
     </p>
   </TextBlock>
   <TextBlock>
@@ -135,7 +133,7 @@
       the limits of JavaScript's and TypeScript's FP cabapilities. I also like
       replicating "poor man's versions" of common frameworks and libraries in
       hopes of gaining a deeper understanding of the tools we use to build
-      stuff.
+      stuff. I am currently also dabbling into Serverless and the AWS ecosystem on my spare time.
     </p>
   </TextBlock>
   <TextBlock>

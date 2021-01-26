@@ -3,6 +3,13 @@
   import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
   import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
   import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
+  import { onMount } from "svelte";
+
+  onMount(async () => {
+    await fetch("https://api.github.com/repos/Temetias/Temetias.github.io/commits/master")
+      .then(r => r.json())
+      .then(({ commit }) => console.log(new Date(commit.author.date)));
+  });
 </script>
 
 <style>
@@ -47,4 +54,5 @@
       </a>
     </li>
   </ul>
+  <span>Page last updated: </span>
 </footer>
