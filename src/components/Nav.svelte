@@ -41,10 +41,15 @@
   .primary-nav a::before {
     content: "<";
     margin-right: 1px;
+    transition: color .2s;
   }
   .primary-nav a::after {
     content: "/>";
     margin-left: 1px;
+    transition: color .2s;
+  }
+  .primary-nav a:hover::after, .primary-nav a:hover::before {
+    color: red;
   }
   .primary-nav a[aria-current] {
     color: red;
@@ -54,6 +59,18 @@
   }
   .socials a {
     font-size: 1.6em;
+  }
+  .twitter, .github, .linkedin {
+    transition: color .2s;
+  }
+  .twitter:hover {
+    color: #00acee;
+  }
+  .github:hover {
+    color: #333;
+  }
+  .linkedin:hover {
+    color: #0e76a8;
   }
   @media (max-width: 660px) {
     .socials-nav {
@@ -92,17 +109,18 @@
   <nav aria-label="social-links" class="socials-nav">
     <ul class="socials">
       <li>
-        <a href="https://github.com/Temetias" aria-label="My github">
+        <a class="github" href="https://github.com/Temetias" aria-label="My github">
           <Icon icon={faGithub} />
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/Temetias" aria-label="My twitter">
+        <a class="twitter" href="https://twitter.com/Temetias" aria-label="My twitter">
           <Icon icon={faTwitter} />
         </a>
       </li>
       <li>
         <a
+          class="linkedin"
           href="https://www.linkedin.com/in/teemu-karppinen-1174b1139/"
           aria-label="My linkedin">
           <Icon icon={faLinkedin} />
