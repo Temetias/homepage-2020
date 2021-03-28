@@ -1,5 +1,7 @@
 <script>
   import TextBlock from "../components/TextBlock.svelte";
+  import TwitchPopUp from "../components/TwitchPopUp.svelte";
+  import { onMount } from "svelte";
 
   function years(from, isAge = false) {
     const computedDiff = new Date(new Date().getTime() - new Date(from).getTime());
@@ -7,10 +9,18 @@
       ? computedDiff.getFullYear() - 1970
       : computedDiff.getFullYear() - (computedDiff.getMonth() < 5 ? 1970 : 1969);
   }
+
+  let twitchData;
+
+  onMount(() => fetch("http://159.65.126.121/twitch/livestatus")
+    .then(response => response.json())
+    .then(jsonResponse => twitchData = jsonResponse)
+    .catch(console.error));
 </script>
 
 <style>
   figure {
+    position: relative;
     text-align: center;
     margin: 0 auto 8.5em auto;
     max-width: 90vw;
@@ -88,6 +98,7 @@
       <img alt="My face" src="me2.jpg" />
     </div>
   </div>
+  <TwitchPopUp twitchData={twitchData} />
   <h1>Teemu Karppinen</h1>
   <figcaption>Fullstack developer, boulderer, sushi fanatic</figcaption>
 </figure>

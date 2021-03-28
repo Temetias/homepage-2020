@@ -3,6 +3,7 @@
   import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
   import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
   import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
+  import { faTwitch } from "@fortawesome/free-brands-svg-icons/faTwitch";
   import { onMount } from "svelte";
 
   function formatDate(date) {
@@ -11,11 +12,11 @@
 
   let lastUpdate;
 
-  onMount(async () => {
+ /*  onMount(async () => {
     await fetch("https://api.github.com/repos/Temetias/Temetias.github.io/commits/master")
       .then(r => r.json())
-      .then(({ commit }) => lastUpdate = formatDate(new Date(commit.author.date)));
-  });
+      .then(({ commit }) => lastUpdate = formatDate(new Date(commit.author.date)))
+  }); */
 </script>
 
 <style>
@@ -71,6 +72,12 @@
       <a href="https://www.linkedin.com/in/teemu-karppinen-1174b1139/">
         <Icon icon={faLinkedin} aria-hidden="true" />
         Teemu Karppinen
+      </a>
+    </li>
+    <li>
+      <a href="https://twitch.tv/teemukarppinen">
+        <Icon icon={faTwitch} aria-hidden="true" />
+        /teemukarppinen
       </a>
     </li>
   </ul>

@@ -3,6 +3,7 @@
   import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
   import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
   import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
+  import { faTwitch } from "@fortawesome/free-brands-svg-icons/faTwitch";
 
   export let segment;
 </script>
@@ -72,6 +73,9 @@
   .linkedin:hover {
     color: #0e76a8;
   }
+  .twitch:hover {
+    color: #6441a5;
+  }
   @media (max-width: 660px) {
     .socials-nav {
       display: none;
@@ -124,6 +128,11 @@
           href="https://www.linkedin.com/in/teemu-karppinen-1174b1139/"
           aria-label="My linkedin">
           <Icon icon={faLinkedin} />
+        </a>
+      </li>
+      <li>
+        <a class="twitch" href="https://twitch.tv/teemukarppinen" aria-label="My twitch">
+          <Icon icon={faTwitch} />
         </a>
       </li>
     </ul>
