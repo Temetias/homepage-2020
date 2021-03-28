@@ -13,7 +13,7 @@
     justify-content: space-between;
     margin: 0 auto;
     align-items: stretch;
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
   }
   .primary-nav {
