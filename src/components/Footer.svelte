@@ -12,11 +12,11 @@
 
   let lastUpdate;
 
- /*  onMount(async () => {
+  onMount(async () => {
     await fetch("https://api.github.com/repos/Temetias/Temetias.github.io/commits/master")
       .then(r => r.json())
       .then(({ commit }) => lastUpdate = formatDate(new Date(commit.author.date)))
-  }); */
+  });
 </script>
 
 <style>
