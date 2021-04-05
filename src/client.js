@@ -13,7 +13,7 @@ function parseNavigator(navigator) {
 sapper.start({
   target: document.querySelector('#sapper')
 }).then(() => {
-  fetch("https://159.65.126.121/laskenta/tapahtuma", {
+  fetch("https://api.teemukarppinen.dev/laskenta/tapahtuma", {
     method: "POST",
     headers: {
       "Accept": "application/json",
@@ -24,7 +24,7 @@ sapper.start({
     .then(response => response.text().then(rawId => {
       const id = rawId.substring(1, rawId.length - 1);
       setInterval(() => {
-        fetch(`https://159.65.126.121/laskenta/ping?id=${id}&time=${performance.now()}`)
+        fetch(`https://api.teemukarppinen.dev/laskenta/ping?id=${id}&time=${performance.now()}`)
           .catch(console.error);
       }, 2000);
     }))
