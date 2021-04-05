@@ -12,7 +12,7 @@
 
   let twitchData;
 
-  onMount(() => fetch("http://159.65.126.121/twitch/livestatus")
+  onMount(() => fetch("https://159.65.126.121/twitch/livestatus")
     .then(response => response.json())
     .then(jsonResponse => twitchData = jsonResponse)
     .catch(console.error));
