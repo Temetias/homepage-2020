@@ -115,7 +115,7 @@
       years. During those {years('August 1, 2015 00:00:00')} years I have
       studied in the university, worked professionally for {years('November 1, 2017 00:00:00')}
       years and spent countless hours continuously learning and expanding my
-      skillset. I am currently working as a senior software developer at
+      skillset. I am currently working as a senior frontend developer at
       <a href="https://ambientia.fi/en/">Ambientia</a>.
     </p>
   </TextBlock>
