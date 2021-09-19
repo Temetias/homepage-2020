@@ -115,8 +115,7 @@
       years. During those {years('August 1, 2015 00:00:00')} years I have
       studied in the university, worked professionally for {years('November 1, 2017 00:00:00')}
       years and spent countless hours continuously learning and expanding my
-      skillset. I am currently working as a senior frontend developer at
-      <a href="https://ambientia.fi/en/">Ambientia</a>.
+      skillset.
     </p>
   </TextBlock>
   <TextBlock>
@@ -143,7 +142,7 @@
       the limits of JavaScript's and TypeScript's FP cabapilities. I also like
       replicating "poor man's versions" of common frameworks and libraries in
       hopes of gaining a deeper understanding of the tools we use to build
-      stuff. I am currently also dabbling into Serverless and the AWS ecosystem on my spare time.
+      stuff.
     </p>
   </TextBlock>
   <TextBlock>
