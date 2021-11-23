@@ -7,7 +7,7 @@ authorImg: /me2.jpg
 authorLink: https://teemukarppinen.dev
 ---
 
-(Good) software developers do their best to make their code as readable as possible for the next developer. Be it adding comments, making patterns declarative or simply just organizing their code cleanly, a good coder ensures their code is nice and tidy and doesn't make the next developer want to quit their job.
+Good software developers do their best to make their code as readable as possible for the next developer. Be it adding comments, making patterns declarative or simply just organizing their code cleanly, a good coder ensures their code is nice and tidy and doesn't make the next developer want to quit their job.
 
 Due to this, there are a lot of guides and even books about the subject. Most of the authors usually inject their own approach to these practices and have their own approach to what is seen as "clean code". Lately I've been thinking about the subject a lot, and wanted to point out one thing that in my opinion doesn't pop often enough regarding clean code.
 
