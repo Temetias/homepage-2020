@@ -2,6 +2,7 @@ import grayMatter from "gray-matter";
 import marked from "marked";
 
 // Import new stuff here!
+import shortCode from "../../blog_content/short-code-is-readable-code.md";
 import tricksAndGotchas from "../../blog_content/js-ts-tricks-and-gotchas.md";
 import iterativeVue from "../../blog_content/iterative-adoption-of-a-framework.md";
 import managingOop from "../../blog_content/managing-event-handlers-in-classes.md";
@@ -24,6 +25,7 @@ function buildPost(post) {
 
 // Drop new stuff here!
 const posts = [
+  shortCode,
   tricksAndGotchas,
   iterativeVue,
   managingOop,

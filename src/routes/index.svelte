@@ -115,7 +115,7 @@
       years. During those {years('August 1, 2015 00:00:00')} years I have
       studied in the university, worked professionally for {years('November 1, 2017 00:00:00')}
       years and spent countless hours continuously learning and expanding my
-      skillset.
+      skillset. I'm currently working as a Software Developer at <a href="https://www.giosg.com/">giosg</a>.
     </p>
   </TextBlock>
   <TextBlock>
@@ -124,12 +124,11 @@
       My skillset
     </h2>
     <p>
-      is mainly focused on web development. On the frontend I have tried and used tons of different
-      tools and technologies and generally can work with all of them. I have most professional experience on the Vue.js
-      ecosystem but when given the choice I tend to lean towards React. I prefer to work with static typing and
-      use TypeScript pretty much everywhere. On the backend I have mostly worked with Node.js, Drupal, SQL, Linux VM's and
-      some Azure. I've also gathered a lot of experience in working directly with clients through the process of building
-      and maintaining software.
+      is mainly focused on fullstack web development. On the frontend I have tried and used tons of different
+      tools and technologies and generally can work with all of them. On the backend I have used a large variety of
+      technologies ranging from Node.js to PHP and Linux VM's to Azure. My preferred paradigm in programming is
+      functional and I use static typing whenever possible. I've also gathered a lot of experience
+      in working directly with clients through the process of building and maintaining software.
     </p>
   </TextBlock>
   <TextBlock>
