@@ -17,7 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "compression": "^1.7.1",
     "gray-matter": "^4.0.2",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "polka": "next",
     "sirv": "^0.4.0"
   },
