@@ -100,7 +100,7 @@
   </div>
   <TwitchPopUp twitchData={twitchData} />
   <h1>Teemu Karppinen</h1>
-  <figcaption>Fullstack developer, boulderer, sushi fanatic</figcaption>
+  <figcaption>Fullstack developer, boulderer, sim racer</figcaption>
 </figure>
 
 <article>
@@ -115,7 +115,7 @@
       years. During those {years('August 1, 2015 00:00:00')} years I have
       studied in the university, worked professionally for {years('November 1, 2017 00:00:00')}
       years and spent countless hours continuously learning and expanding my
-      skillset. I'm currently working as a Software Developer at <a href="https://www.giosg.com/">giosg</a>.
+      skillset. I'm currently working as a Software Architect at <a href="https://www.processgenius.fi/fi/">Process Genius</a>.
     </p>
   </TextBlock>
   <TextBlock>
@@ -147,11 +147,11 @@
   <TextBlock>
     <h2 id="to-stay-in-shape" slot="title">
       <i aria-hidden="true">🧗‍♂️</i>
-      To stay in shape
+      In my freetime
     </h2>
     <p>
-      I go bouldering, snowboarding and ride my MTB. I am not particularily good
-      at any of those but I am having a good time nonetheless!
+      I go bouldering, snowboarding and ride my MTB. I'm also a passionate sim racer. You can maybe catch me streaming
+      sim racing on <a href="https://www.twitch.tv/teemukarppinen">my Twitch channel</a> every now and then.
     </p>
   </TextBlock>
 </article>
